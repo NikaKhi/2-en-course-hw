@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homework1</title>
@@ -12,30 +12,24 @@
 </head>
 
 <body>
-    <div class="top">
-        <h1 class="main-title"> Добро пожаловать <br> на мой сайт !</h1>
-        <p class="description">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай поехали и приступай
-        </p>
-        <input type="text" placeholder="Поехали !" name="input" class="search-input">
+    <div class="top center">
+        <h1 class="top__title">Добро пожаловать <br> на мой сайт !</h1>
+        <p class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <strong>поехали</strong> и <strong>приступай</strong></p>
+        <button class="top__btn">Поехали!</button>
     </div>
-
-    <div class="games">
-        <section class="game-box center">
-            <div class="for">
-                <div class="for-item1 for__items">
-                    <a href="#" class="game-links"><img src="./img/game1.jpeg" alt="game1"></a>
-                    Игра 1
-                </div>
-                <div class="for-item2 for__items">
-                    <a href="#" class="game-links"><img src="./img/game2.jpeg" alt="game2"></a>
-                    Игра 2
-                </div>
-                <div class="for-item3 for__items">
-                    <a href="#" class="game-links"><img src="./img/game3.jpeg" alt="game3"></a>
-                    Игра 3
-                </div>
-        </section>
     </div>
+    <div class="play center">
+        <a class="play__box game1" href="#">
+            <div class="game">Игра 1</div>
+        </a>
+        <a class="play__box game2" href="#">
+            <div class="game">Игра 2</div>
+        </a>
+        <a class="play__box game3" href="#">
+            <div class="game">Игра 3</div>
+        </a>
+    </div>
+  
 
 </body>
 
