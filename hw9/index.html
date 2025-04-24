@@ -3,16 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Скрыть/Показать заголовок</title>
+    <title>7 задач по JavaScript</title>
     <style>
         .hidden {
             display: none;
         }
+        .description {
+            color: #333;
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
-    <h1 id="myHeading">Привет, это мой заголовок!</h1>
+    <!-- Задание 1 -->
+    <h1 id="toggleHeading">Текст который можно скрыть/показать</h1>
     <button id="toggleButton">Скрыть</button>
+    <hr>
+
+    <!-- Задание 2 -->
+    <p id="colorParagraph">Этот текст будет менять цвет</p>
+    <button id="colorButton">Изменить цвет</button>
+    <hr>
+
+    <!-- Задание 3 -->
+    <h1 id="changeTextHeading">Исходный текст заголовка</h1>
+    <button id="changeTextButton">Изменить текст</button>
+    <hr>
+
+    <!-- Задания 4 и 5 -->
+    <p class="description">Первый элемент с классом description</p>
+    <p class="description">Второй элемент с классом description</p>
+    <p class="other">Элемент без нужного класса</p>
+    <p class="description">Третий элемент с классом description</p>
+    <hr>
+
+    <!-- Задание 6 -->
+    <button id="addElementButton">Добавить элемент</button>
+    <hr>
+
+    <!-- Задание 7 -->
+    <button id="removeElementButton">Удалить элемент</button>
 
     <script src="script.js"></script>
 </body>
