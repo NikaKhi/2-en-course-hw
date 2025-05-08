@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    height: 1024px;
+    background-image: url(img/top_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__title {
+        color: #FFF;
+        font-size: 64px;
+        font-weight: 700;
+        padding-top: 217px;
+        padding-bottom: 32px;
+        width: 789px;
+    }
+    &__text {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+        padding-bottom: 44px;
+        width: 481px;
+    }
+    &__btn {
+        width: 234.063px;
+        height: 48.603px;
+        border-radius: 30px;
+        background: #9C0332;
+        outline: none;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+        &:hover {
+            background: #EB443F;
+            cursor: url(img/cursor.svg), pointer;
+        }
+    }
+}
+
+.play {
+    background-image: url(img/play_background.jpg);
+    height: 556px;
+    display: flex;
+    gap: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    &__box {
+        width: 379px;
+        height: 300px;
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+        position: relative;
+        &:hover {
+            outline: 3px solid #44D2FF;
+            cursor: url(img/cursor.svg), pointer;
+        }
+    }
+}
+.game {
+    position: absolute;
+    top: 236px;
+    left: 32px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px; 
+    &-1 {
+        background-image: url(img/game1.jpg);
+    }
+    &-2 {
+        background-image: url(img/game2.jpg);
+    }
+    &-3 {
+        background-image: url(img/game3.jpg);
+    }
+}
+
+.game__one {
+    padding-top: 282px;
+    padding-bottom: 232px;
+    display: flex;
+    gap: 135px;
+    background-image: url(img/game_one_background.jpg);
+    &_info {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &_title {
+        color: #FFF;
+        font-size: 48px;
+        font-weight: 700;
+    }
+    &_text {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+    }
+    &_btn {
+        width: 234.063px;
+        height: 48.603px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: #9C0332;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+        &:hover {
+            background: #EB443F;
+            cursor: url(img/cursor.svg), pointer;
+        }
+    }
+}
+.game__two {
+    padding-top: 239px;
+    padding-bottom: 239px;
+    display: flex;
+    gap: 135px;
+    background-image: url(img/game_two_background.jpg);
+    flex-direction: row-reverse;
+    &_info {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &_title {
+        color: #FFF;
+        font-size: 48px;
+        font-weight: 700;
+    }
+    &_text {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    &_btn {
+        width: 240.441px;
+        height: 48.603px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: #9C0332;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 400;
+        &:hover {
+            background: #EB443F;
+            cursor: url(img/cursor.svg), pointer;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@import 'mobile';
