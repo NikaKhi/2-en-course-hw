@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="top center">
+        <h1 class="top__title">Добро пожаловать <br> на мой сайт !</h1>
+        <p class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+            <strong>поехали</strong> и <strong>приступай</strong></p>
+        <button class="top__btn">Поехали!</button>
+    </div>
+    <div class="play center">
+        <a class="play__box game-1" href="#">
+            <div class="game">Игра 1</div>
+        </a>
+        <a class="play__box game-2" href="#">
+            <div class="game">Игра 2</div>
+        </a>
+        <a class="play__box game-3" href="#">
+            <div class="game">Игра 3</div>
+        </a>
+    </div>
+    <div class="game__one center">
+        <div class="game__one_info">
+            <h2 class="game__one_title">Времена года!</h2>
+            <p class="game__one_text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
+                времени года он относится</p>
+            <button onclick="alert(monthNumber())" ; class="game__one_btn">Играть!</button>
+        </div>
+        <div>
+            <img class="game__one_img" src="img/undraw_video_game_night_8h8m 1.png" alt="game__img">
+        </div>
+    </div>
+    <div class="game__two center">
+        <div class="game__two_info">
+            <h2 class="game__two_title">Запомни слова</h2>
+            <p class="game__two_text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+                запомнить.</p>
+            <button onclick="gameWords();" class="game__two_btn">Играть</button>
+        </div>
+        <img class="game__two_img" src="img/undraw_gaming_re_cma2 1.png" alt="game__two">
+    </div>
     <script src="hw8.js"></script>
 </body>
+
 </html>

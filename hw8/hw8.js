@@ -14,6 +14,7 @@ console.log(people.sort(function(a, b) {
     return 0
 }));
 
+
 //Задание 2
 function isPositive(num) {
       return num > 0;
